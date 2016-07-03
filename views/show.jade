@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+
+  p The log entries in a scrollable text box:
+
+  textarea(rows="40" cols="75") #{logs}
+
+  
+  form(method="get", action="/")
+    button(type="submit") Home
+
+
+  
+

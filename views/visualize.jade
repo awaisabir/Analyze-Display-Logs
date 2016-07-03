@@ -1,0 +1,26 @@
+extends layout
+
+block header
+  script(src="javascripts/jquery-1.12.1.js")
+  script(src="javascripts/Chart.js")
+
+block content
+  h1= title
+
+  p.
+    Query that produced these logs are as follows :
+
+  ul
+    li #{theQuery}
+
+  p.
+    <b><center> IF THERE IS NO GRAPH DISPLAYED THEN THERE WERE NO MATCHES </center></b>
+
+  center
+    canvas(id="myChart", width="400", height="400")
+  script!= theData
+  script.
+    var ctx = $("#myChart").get(0).getContext("2d");
+    var myBarChart = new Chart(ctx).Bar(data, {});
+
+  <a href="http://localhost:3000/">Click me to go Home.</a>
