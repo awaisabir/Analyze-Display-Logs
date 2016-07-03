@@ -10,7 +10,7 @@ The app allows users to upload log files, which is stored onto an underlying dat
 - Display the information in a form of a bar-chart.
 - Download the result in the form of a text (.txt) file.
 
-This web-app was built using nodeJS as the back-end (server-side), Express as the underlying framework for the server, jQuery to handle the various AJAX (Asynchronous JS And XML) requests, and jade as the HTML templating engine.
+This web-app was built using nodeJS as the back-end (server-side), Express as the underlying framework for the server, jQuery to handle the various AJAX (Asynchronous JS And XML) requests, and Jade as the HTML templating engine.
 
 Thank you for viewing this project,
 Muhammad Awais Qureshi
